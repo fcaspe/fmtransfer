@@ -1,0 +1,18 @@
+class_path: fmtransfer.data.EnvelopesDataModule
+init_args:
+  batch_size: 32
+  num_workers: 16
+  dataset_class: fmtransfer.data.EnvelopesDataset
+  data_dir: dataset/
+  data_file: demidifyer_0.pt
+  generator:
+    class_path: fmtransfer.data.generator.EnvelopeDatasetGenerator
+    init_args:
+      patch_file: demidifyer.syx
+      patch_loc: 0
+  instance_len: 1000
+  n_instances: 1000
+  n_events_per_instance: [1]
+  envelope_type: linear
+  dataset_kwargs:
+    seed: 42

@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["fmtransfer"]
+
+[project]
+name = "fmtransfer"
+version = "0.0.1"
+dependencies = [
+    "boto3",
+    "einops",
+    "torch ~= 1.13",
+    "torchaudio ~= 0.13",
+    "pytorch_lightning[extra] ~= 1.9.0",
+    "tqdm",
+    "wandb",
+    "python-dotenv",
+    "soundfile",
+]
+
+[project.scripts]
+fmtransfer = "fmtransfer.cli:main"
+fmtransfer-dataset = "fmtransfer.cli:dataset"
+
+[project.optional-dependencies]
+dev = ["black", "flake8", "pytest", "pytest-mock", "pyfakefs", "pre-commit", "pytest-cov"]
+modal = ["nnAudio", "numpy<1.24"]
