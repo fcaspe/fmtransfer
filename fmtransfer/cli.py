@@ -7,8 +7,6 @@ import os
 from dotenv import load_dotenv
 from pytorch_lightning.cli import LightningCLI
 
-from fmtransfer.callbacks import SaveConfigCallbackWanb
-
 # Setup logging
 logging.basicConfig()
 log = logging.getLogger(__name__)
@@ -26,7 +24,7 @@ class MyLightningCLI(LightningCLI):
 
 def run_cli():
     """ """
-    _ = MyLightningCLI(save_config_callback=SaveConfigCallbackWanb)
+    _ = MyLightningCLI(save_config_overwrite=True)
     return
 
 

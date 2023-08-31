@@ -35,16 +35,10 @@ trainer:
   min_steps: 120000
   max_steps: 120000
   logger:
-    class_path: pytorch_lightning.loggers.WandbLogger
+    class_path: pytorch_lightning.loggers.CSVLogger
     init_args:
-      name: test_train
-      project: fmtransfer
+      name: paper_runs
       save_dir: ./logs
-      log_model: false
-    dict_kwargs:
-      job_type: train
-      group: paper_runs
-      entity: francocaspe
   callbacks:
     - class_path: fmtransfer.callbacks.TestMetricsCallback # Only works with linear envelope generation
     - class_path: pytorch_lightning.callbacks.LearningRateMonitor
