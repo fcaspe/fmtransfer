@@ -12,7 +12,7 @@
 <img src="img/method.png"">
 </center>
 
-This is the official implementation of the FM Tone Transfer with Envelope Learning paper, accepted to the [Audio Mostly 2023](https://audiomostly.com/2023/).
+This is the official implementation of the FM Tone Transfer with Envelope Learning paper, accepted to [Audio Mostly 2023](https://audiomostly.com/2023/).
 
 ## Install
 
