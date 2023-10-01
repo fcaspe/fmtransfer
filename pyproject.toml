@@ -18,6 +18,7 @@ dependencies = [
     "wandb",
     "python-dotenv",
     "soundfile",
+    "pydx7@git+https://github.com/fcaspe/pydx7/"
 ]
 
 [project.scripts]
