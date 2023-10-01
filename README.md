@@ -1,4 +1,18 @@
-# FM Tone Transfer with Envelope Learning
+<h1 align="center">FM Tone Transfer with Envelope Learning</h1>
+<div align="center">
+<h3>
+    <a href="https://fcaspe.github.io/assets/pdf/learned_envelopes.pdf" target="_blank">paper</a> - <a href="https://fcaspe.github.io/fmtransfer" target="_blank">website</a>
+</h3>
+    <p>
+    Franco Caspe - Andrew McPherson - Mark Sandler
+    </p>
+</div>
+
+<center>
+<img src="img/method.png"">
+</center>
+
+This is the official implementation of the FM Tone Transfer with Envelope Learning paper, accepted to the [Audio Mostly 2023](https://audiomostly.com/2023/).
 
 ## Install
 
@@ -28,7 +42,7 @@ To run an experiment, pass the appropriate config file to the `fit` subcommand:
 $ fmtransfer fit -c cfg/paper_runs.yaml
 ```
 
-To replicate results, please run:
+To replicate the paper's results, please run:
 
 ```bash
 $ source schedule/test/paper_runs.sh
