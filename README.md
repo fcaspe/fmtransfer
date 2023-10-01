@@ -36,7 +36,7 @@ Code in this repo is accessed through the PyTorch Lightning CLI, which is availa
 $ fmtransfer --help
 ```
 
-To run an experiment, pass the appropriate config file to the `fit` subcommand:
+To run an experiment, pass the appropriate config file to the `fit` subcommand. For example:
 
 ```bash
 $ fmtransfer fit -c cfg/paper_runs.yaml
